@@ -1,0 +1,93 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #F1F1F1;
+  --vt-c-white-mute: #f8f8f8;
+  --vt-c-white-contast: #b1bcdb;
+
+  --vt-c-black: #000;
+  --vt-c-black-soft: #696969;
+  --vt-c-black-mute: #818A91;
+
+  --vt-c-green-soft: #42bf8d;
+  --vt-c-green-mute: #288767;
+  --vt-c-green-dark: #1C8968;
+  --vt-c-green-gradient-1: linear-gradient(90deg, rgb(45, 229, 82) 0%, rgb(36, 183, 48) 100%);
+  --vt-c-green-gradient-2: linear-gradient(to right, #1A8766 0%, #2CCC9C 100%);
+
+  /* --vt-c-grey-light-1: #696969;
+  --vt-c-grey-light-2: #b1bcdb;
+  --vt-c-grey-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-grey-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64); */
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-gradient-soft: var(--vt-c-green-gradient-1);
+  --color-gradient-dark: var(--vt-c-green-gradient-2);
+
+  --color-title-text: var(--vt-c-black);
+  --color-enphasis-text: var(--vt-c-green-mute);
+  --color-soft-text: var(--vt-c-green-soft);
+  --color-text: var(--vt-c-black-soft);
+  --color-text-invert: var(--vt-c-white-contast);
+
+  --font-title-text: font-family: 'Poppins', sans-serif;
+  --font-page-text: font-family: 'Nunito', sans-serif;;
+
+  --color-shadow: var(--vt-c-white-soft);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-grey-dark-2);
+    --color-border-hover: var(--vt-c-grey-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: normal;
+  font-family: var(--font-page-text);
+  color: var(--color-text);
+
+  position: relative;
+}
+
+body {
+  background: var(--color-background);
+
+  text-rendering: optimizeLegibility;
+
+  transition: color 0.5s, background-color 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
