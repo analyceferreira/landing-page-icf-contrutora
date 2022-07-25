@@ -56,7 +56,6 @@
 
         box-shadow: 8px 3px 30px 5px var(--color-shadow);
         z-index: 5;
-
     }
 
     img {
@@ -154,7 +153,7 @@
 
             justify-content: flex-start;
             align-items: flex-start;
-            position: relative;
+            position: relative;            
         }
         nav {
             width: 100%;
@@ -168,20 +167,14 @@
             position: absolute;
             z-index: 5;
             background-color: var(--color-background);
-
-            transition: 1s;
         }
 
         .hidden {
             left: -120%;
-            transition: 1s;
-
         }
 
         .menu-hamburger {
             visibility: visible;
-            transition: 1s;
-
         }
     }
 </style>

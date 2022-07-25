@@ -1,5 +1,5 @@
 <template>
-<section class="aks-quote">
+<section class="aks-quote" id="aks-quote">
     <div class="aks-quote-container">
         <div>
             <h2>Solicite um orçamento</h2>
