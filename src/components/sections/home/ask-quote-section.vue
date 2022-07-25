@@ -1,6 +1,6 @@
 <template>
 <section class="aks-quote" id="aks-quote">
-    <div class="aks-quote-container">
+    <div class="aks-quote-container container">
         <div>
             <h2>Solicite um orçamento</h2>
             <p>Nós atendemos todo o Brasil com nossos Licenciados e Experts, converse com nossos especialistas via WhatsApp, eles te ajudarão a localizar o seu representante.</p>
@@ -22,6 +22,7 @@ section.aks-quote {
 .aks-quote-container {
     width: 100%;
     height: 120px;
+    
     margin: none;
 
     display: flex;

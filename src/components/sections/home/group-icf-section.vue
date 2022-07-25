@@ -5,6 +5,7 @@
 <template>
 <section class="group-icf section-gradient">
     <WaveSvg/> 
+    <div class="container">
     <div class="group-icf-container">
         <div class="image">
             <img src="/src/assets/images/grupo.icf.png" alt="">
@@ -15,6 +16,7 @@
 
             <a href="https://grupoicf.com.br"> <button>Saiba mais</button> </a>
         </div>
+    </div>
     </div>
 </section>
 </template>

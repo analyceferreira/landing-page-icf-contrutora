@@ -22,15 +22,7 @@
   --vt-c-green-gradient-2: linear-gradient(to right, #1A8766 0%, #2CCC9C 100%);
   --vt-c-green-gradient-3: linear-gradient(to right, #46A27B 0%, #46A27B 100%);
 
-  /* --vt-c-grey-light-1: #696969;
-  --vt-c-grey-light-2: #b1bcdb;
-  --vt-c-grey-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-grey-dark-2: rgba(84, 84, 84, 0.48);
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64); */
 }
 
 /* semantic color variables for this project */
@@ -73,6 +65,7 @@
 
   --section-gap: 5em;
   --margin-global: 0 2%;
+  --max-width: 1250px;
 }
 
 
@@ -124,7 +117,10 @@ body {
 /*--------------- Margins Sections ---------------*/
 section {
   padding: var(--section-gap) 2%;
-  display: inline-block
+  display: inline-block;
+  width: 100%;
+  
+  position: relative;
 }
 @media screen and (max-width: 750px) {
   section {
@@ -133,9 +129,13 @@ section {
   }
 }
 
-
 .section-gradient {
   background: var(--color-gradient-white-soft);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 
@@ -197,6 +197,13 @@ button {
 
   background: var(--color-gradient-dark);
   cursor: pointer;
+  transition: .5s;
+  top: 0;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 11px 14px -7px rgb(0 0 0 / 25%);
 }
 
 
@@ -212,6 +219,7 @@ svg {
 iframe {
   padding: 10px;
   height: 54vw;
+  max-height: 628px;
   min-height: 100%;
   width: 100%;
   border: none;    

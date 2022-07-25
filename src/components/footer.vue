@@ -8,7 +8,7 @@
 
 <template>
 <section class="footer">
-    <div class="footer-buttons">
+    <div class="footer-buttons container">
         <div class="collumn one">
             <img src="/src/assets/images/ICF-Construtora-logo.png" alt="">
             <div>
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <hr>
+        <hr>
     <div class="footer-copyright">
         <p>2021 ICF Construtora Inteligente by <a target="_blank" href="https://ascensiondigital.com.br">Ascension Digital</a></p>
     </div>
@@ -46,6 +46,11 @@
 
 
 <style>
+hr {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
 .footer {
     width: 100%;
     height: 470px;

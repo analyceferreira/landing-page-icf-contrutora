@@ -9,6 +9,7 @@
 
 <template>
 <section class="numbers-icf">
+    <div class="container">
     <div class="titles">
         <h3>A ICF Construtora</h3>
         <h2>A ICF Construtora em números</h2>
@@ -52,12 +53,26 @@
             </div>
         </div>
     </div>
+    </div>
+    <img class="element" src="/src/assets/images/element-two-hero-page.png" alt="">
+
 </section>
 </template>
 
 
 
 <style >
+    .numbers-icf {
+        top: 100px;
+    }
+    .numbers-icf .element {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 800px;
+
+        z-index: 0;
+    }
 /*--------- Section ---------*/
 .numbers-icf-titles {
     display: flex;
@@ -84,6 +99,7 @@
     display: flex;
     gap: 2em;
     box-shadow: var(--shadow-card);
+    background-color: var(--color-background);
 }
 
 .card .info {

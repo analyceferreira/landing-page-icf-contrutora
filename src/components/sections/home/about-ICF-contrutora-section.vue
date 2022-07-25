@@ -11,6 +11,7 @@
 
 <template>
 <section class="about-icf">
+    <div class="container">
     <div class="about-icf-titles">
         <h3>Conheça mais sobre</h3>
         <h2>Como construir com a ICF Construtora</h2>
@@ -78,6 +79,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 </template>

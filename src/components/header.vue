@@ -21,22 +21,23 @@
 
 <template>
     <header>
-        <div>
-            <a href="#"><img src="https://icfconstrutora.com.br/wp-content/uploads/2020/10/LADO-VERDE-FUNDO-BRANCO.png" alt="Logo ICF reduzida cor verde fundo"></a>
+        <div class="header-container">
+            <div>
+                <a href="#"><img src="https://icfconstrutora.com.br/wp-content/uploads/2020/10/LADO-VERDE-FUNDO-BRANCO.png" alt="Logo ICF reduzida cor verde fundo"></a>
+            </div>
+            <nav :class="[open? '' : 'hidden']">
+                <a v-for="link in links" :href="link.link">{{link.name}}</a>
+            </nav>
+            
+            <div class="menu-hamburger">
+                <label for="check">
+                    <input type="checkbox" @click="MenuOpen()"  id="check"/> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
         </div>
-        <nav :class="[open? '' : 'hidden']">
-            <a v-for="link in links" :href="link.link">{{link.name}}</a>
-        </nav>
-        
-        <div class="menu-hamburger">
-            <label for="check">
-                <input type="checkbox" @click="MenuOpen()"  id="check"/> 
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-
     </header>
 </template>
 
@@ -51,10 +52,22 @@
         padding: var(--margin-global);
 
         display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-shadow: 8px 3px 30px 5px rgb(0 0 0 / 8%);
+        z-index: 5;
+    }
+    .header-container {
+        height: 100px;
+        width: 100%;
+        max-width: var(--max-width);
+        padding: var(--margin-global);
+
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
-        box-shadow: 8px 3px 30px 5px var(--color-shadow);
         z-index: 5;
     }
 

@@ -1,26 +1,47 @@
 <template>
-<section class="hero">
-    <div class="hero-info">
-        <div>
-            <h3>Conheça a</h3>
-            <h1>ICF Construtora Inteligente</h1>
+<section >
+    <div class="hero container">
+        <div class="hero-info">
+            <div>
+                <h3>Conheça a</h3>
+                <h1>ICF Construtora Inteligente</h1>
+            </div>
+            <p>Uma empresa especializada em construções com iForms ICF, um sistema construtivo inteligente, prático e rápido!</p>
+            <a href="https://icfconstrutora.com.br/solicitar-orcamento/"><button>Solicitar orçamento</button></a>
         </div>
-        <p>Uma empresa especializada em construções com iForms ICF, um sistema construtivo inteligente, prático e rápido!</p>
-        <a href="https://icfconstrutora.com.br/solicitar-orcamento/"><button>Solicitar orçamento</button></a>
+        <div class="iframe">
+            <iframe allow="autoplay; fullscreen" type="text/html" src="https://www.youtube-nocookie.com/embed/Ska3K4OryH0?version=3&amp;enablejsapi=1&amp;html5=1&amp;volume=100&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://icfconstrutora.com.br;&amp;controls=0&amp;playsinline=1" allowfullscreen width="100%" height="100%" class="intrinsic-ignore" style="opacity: 1; visibility: visible; width: 100%; height: 300px; display: block;" id="iframe83038" title="Conheça a ICF Construtora, especializada em construções com ICF (casas de ISOPOR)."></iframe>
+        </div>
+        <img class="element-one" src="/src/assets/images/element-hero-page.png" alt="">
+        <img class="element" src="/src/assets/images/element-two-hero-page.png" alt="">
     </div>
-    <div class="iframe">
-        <iframe allow="autoplay; fullscreen" type="text/html" src="https://www.youtube-nocookie.com/embed/Ska3K4OryH0?version=3&amp;enablejsapi=1&amp;html5=1&amp;volume=100&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://icfconstrutora.com.br;&amp;controls=0&amp;playsinline=1" allowfullscreen width="100%" height="100%" class="intrinsic-ignore" style="opacity: 1; visibility: visible; width: 100%; height: 300px; display: block;" id="iframe83038" title="Conheça a ICF Construtora, especializada em construções com ICF (casas de ISOPOR)."></iframe>
-    </div>
+
 </section>
 </template>
 
 
 
 <style>
+    .hero .element {
+        position: absolute;
+        top: -100px;
+        left: 0;
+
+        z-index: 0;
+    }
+        .hero .element-one {
+        position: absolute;
+        top: -50px;
+        left: -40px;
+
+        z-index: 1;
+    }
     /*------ Hero section ------*/
     .hero {
         display: flex;
         gap: 2%;
+        width: 100%;
+        position: static;
     }
 
     .hero div {
@@ -63,10 +84,6 @@
         padding: 0;
     }
 
-    .ytp-cued-thumbnail-overlay-image {
-        object-fit: cover;
-        background-size: cover !important; 
-    }
 
 
     @media screen and (max-width: 870px) {

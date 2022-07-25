@@ -4,7 +4,8 @@
 
 
 <template>
-<section class="about-the-sytem-container">
+<section class="">
+    <div class=" about-the-sytem-container container">
     <div class="about-divider image">
         <img class="image-principal" 
         src="/src/assets/images/certifield-builder-iforms.png" alt="imagem de uma placa de iforms branca com simbolo de certificado escrito Certifield Builder IForms em um fundo verde">
@@ -33,6 +34,7 @@
         
         <a href="https://www.iforms.com.br"><button>Saiba mais</button></a>
     </div>
+    </div>
 
 </section>
 </template>
@@ -46,7 +48,7 @@
 }
 
 .about-divider {
-    width: 52%;
+    width: 50%;
 }
 
 .about-divider.image {
@@ -56,6 +58,34 @@
 .image .image-principal {
     width: 100%;
     position: relative;
+    transition: all .3s ease-in-out;
+    animation: particlemove2 4.5s infinite linear;
+}
+@keyframes particlemove2 {
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(10px, 10px);
+    -webkit-transform: translate(10px, 10px);
+  }
+
+  50% {
+    transform: translate(5px, 5px);
+    -webkit-transform: translate(5px, 5px);
+  }
+
+  75% {
+    transform: translate(10px, -5px);
+    -webkit-transform: translate(10px, -5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+  }
 }
 
 .image .image-element {

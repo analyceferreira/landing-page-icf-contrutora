@@ -1,5 +1,6 @@
 <template>
 <section  id="licenseds">
+    <div class="container">
     <div class="titles">
         <h3>Conheça</h3>
         <h2>Nossos licenciados</h2>
@@ -8,6 +9,7 @@
 
     <div class="iframe">
         <iframe src="https://grupoicf.com.br/widgets/licenciados" scrolling="no" ></iframe>
+    </div>
     </div>
 </section>
 </template>

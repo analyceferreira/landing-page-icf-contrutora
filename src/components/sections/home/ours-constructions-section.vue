@@ -6,7 +6,7 @@
 <template>
 <section class="ours-construction section-gradient" id="ours-constructions">
     <WaveSvg/>
-
+    <div class="container">
     <div class="titles">
         <h3>Conheça algumas de</h3>
         <h2>Nossas obras</h2>
@@ -58,6 +58,7 @@
         </a>
 
     </div>
+    </div>
 </section>
 </template>
 
@@ -98,5 +99,18 @@
     position: absolute;
     position: 5;
     bottom: -1.5em;
+}
+
+
+@media screen and (max-width:800px) {
+    .contruction-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .contruction-card {
+        width: 100%;
+    }
 }
 </style>
