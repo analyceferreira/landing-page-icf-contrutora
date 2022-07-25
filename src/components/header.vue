@@ -169,11 +169,13 @@
             position: relative;            
         }
         nav {
-            width: 100%;
-            height: 100vh;
-            margin-top: 5em;
-            padding-top: 1em;
-            padding-left: 1em;
+            width: 120%;
+            height: 88vh;
+            margin-top: 0;
+            top: 84px;
+            left: -1em;
+            padding-top: 0;
+            padding-left: 6%;
 
             flex-direction: column;
             gap: .5rem;
@@ -183,7 +185,7 @@
         }
 
         .hidden {
-            left: -120%;
+            left: -130%;
         }
 
         .menu-hamburger {

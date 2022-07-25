@@ -69,21 +69,6 @@
 }
 
 
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-grey-dark-2);
-    --color-border-hover: var(--vt-c-grey-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-} */
-
 *,
 *::before,
 *::after {
@@ -164,7 +149,6 @@ h2 {
   }
 }
 
-
 h3 {
   margin-bottom: .6em;
 
@@ -174,14 +158,13 @@ h3 {
   font-family: var(--font-title-text);
 }
 
-
-
 h4 {
   color: var(--color-title-text);
   font-size: var(--font-18px);
   font-weight: var(--weight-bold);
   font-family: var(--font-title-text);
 }
+
 
 
 /*--------------- Global buttons ---------------*/
@@ -207,6 +190,7 @@ button:hover {
 }
 
 
+
 /*--------------- Global icons components svg ---------------*/
 svg {
   width: var(--font-50px);
@@ -215,12 +199,14 @@ svg {
   fill:var(--color-mute-text);
 }
 
+
+
 /*--------------- Global iframes ---------------*/
-iframe {
+iframe.map  {
   padding: 10px;
   height: 54vw;
   max-height: 628px;
-  min-height: 100%;
+  min-height: 620px;
   width: 100%;
   border: none;    
 }
@@ -228,6 +214,3 @@ iframe {
   background-color: var(--color-background-mute);
   border-radius: 20px;
 }
-
-
-

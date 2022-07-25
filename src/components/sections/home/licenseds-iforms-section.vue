@@ -8,7 +8,7 @@
     </div>
 
     <div class="iframe">
-        <iframe src="https://grupoicf.com.br/widgets/licenciados" scrolling="no" ></iframe>
+        <iframe class="map" src="https://grupoicf.com.br/widgets/licenciados" scrolling="no" ></iframe>
     </div>
     </div>
 </section>

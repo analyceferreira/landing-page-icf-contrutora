@@ -121,6 +121,9 @@
 }
 
 
+
+/* ---------- Responsive ajustments ------------ */
+
 @media screen and (max-width: 760px) {
     .numbers-icf-cards {
         flex-direction: column;

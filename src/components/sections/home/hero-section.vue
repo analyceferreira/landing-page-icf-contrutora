@@ -22,20 +22,6 @@
 
 
 <style>
-    .hero .element {
-        position: absolute;
-        top: -100px;
-        left: 0;
-
-        z-index: 0;
-    }
-        .hero .element-one {
-        position: absolute;
-        top: -50px;
-        left: -40px;
-
-        z-index: 1;
-    }
     /*------ Hero section ------*/
     .hero {
         display: flex;
@@ -69,19 +55,39 @@
         letter-spacing: -0.01rem;
     }
 
+    .hero a{
+        width: fit-content;
+    }
+
     .hero button {
         background: var(--color-gradient-soft);
         margin-bottom: .1em;
     }
 
 
-    /*------ Hero video ------*/
-
-    
+    /*------ Hero video ------*/   
     .hero iframe {
         width: 100%;
+        border: none; 
         border-radius: 20px;
         padding: 0;
+    }
+
+
+    /*------ Hero images ------*/   
+    .hero .element {
+        position: absolute;
+        top: -100px;
+        left: 0;
+
+        z-index: 0;
+    }
+        .hero .element-one {
+        position: absolute;
+        top: -50px;
+        left: -40px;
+
+        z-index: 1;
     }
 
 
@@ -100,10 +106,11 @@
             margin-bottom: .5em;
         }
 
-        .hero button {
+        .hero a {
             position: absolute;
-            bottom: -22em;
+            bottom: -24em;
         }
+
         .hero-info {
             gap: 0;
         }

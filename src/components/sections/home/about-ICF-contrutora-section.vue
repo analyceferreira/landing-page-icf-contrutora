@@ -95,6 +95,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3em;
+}
+.about-icf-titles h2 {
+    text-align: center;
 }
 
 

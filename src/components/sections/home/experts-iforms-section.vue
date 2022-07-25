@@ -8,7 +8,7 @@
             </div>
 
             <div class="iframe">
-                <iframe src="https://grupoicf.com.br/widgets/experts" scrolling="no"></iframe>
+                <iframe class="map" src="https://grupoicf.com.br/widgets/experts" scrolling="no"></iframe>
             </div>
         </div>
 
