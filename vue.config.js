@@ -1,3 +1,5 @@
 module.exports = {
-    baseUrl:'/landing-page-icf-contrutora'
-}
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/landing-page-icf-contrutora/'
+      : '/'
+  }
