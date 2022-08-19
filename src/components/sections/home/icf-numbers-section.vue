@@ -63,7 +63,7 @@
 
 <style >
     .numbers-icf {
-        top: 100px;
+        padding: 1rem 2%;;
     }
     .numbers-icf .element {
         position: absolute;
