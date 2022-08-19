@@ -1,3 +1,5 @@
+<head><base target="_blank"></head>
+
 #  Landing Page ICF Construtora
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -6,7 +8,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ## Preview
 
-[Click here](https://analyceferreira.github.io/landing-page-icf-contrutora/){target="_blank"} to see live preview
+[Click here](https://analyceferreira.github.io/landing-page-icf-contrutora/?target=_blank) to see live preview
 
 <kbd> ![image alternative text](https://media.discordapp.net/attachments/997292586333110365/1010169616376541236/Screenshot_1.png) </kbd>
 
